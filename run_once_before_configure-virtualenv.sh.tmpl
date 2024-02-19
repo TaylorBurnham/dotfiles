@@ -1,4 +1,10 @@
 #!{{ lookPath "bash" }}
+
+if [[ ! "$(hostname)" =~ ^xexanoth ]]; then
+    echo "Hostname does not start with 'xexanoth'. Halting script."
+    exit 1
+fi 
+
 VIRTUALENVS="${HOME}/.virtualenvs"
 VIRTUALENV_NAME="ansible-env"
 VIRTUALENV_PATH="${VIRTUALENVS}/${VIRTUALENV_NAME}"
