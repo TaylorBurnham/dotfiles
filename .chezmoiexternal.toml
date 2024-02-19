@@ -23,22 +23,27 @@
     exact = true
     stripComponents = 1
 
+# Vim
+[".vim/bundle/Vundle.vim"]
+    type = "archive"
+    url = "https://github.com/VundleVim/Vundle.vim/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+
 # Utilities
 [".local/bin/yt-dlp"]
     type = "file"
     url = "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp"
     refreshPeriod = "168h"
-
 [".local/bin/terraform"]
     type = "archive-file"
     url = "https://releases.hashicorp.com/terraform/1.7.3/terraform_1.7.3_linux_amd64.zip"
     path = "terraform"
-
 [".local/bin/gitleaks"]
     type = "archive-file"
     url = "https://github.com/gitleaks/gitleaks/releases/download/v8.18.2/gitleaks_8.18.2_linux_x64.tar.gz"
     path = "gitleaks"
-
 [".local/bin/.dockcheck"]
     type = "archive"
     url = "https://github.com/mag37/dockcheck/archive/refs/tags/v0.4.0.zip"
