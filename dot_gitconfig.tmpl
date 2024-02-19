@@ -1,0 +1,19 @@
+[init]
+  defaultBranch = main
+[user]
+  name = "{{ .user_info.fullname }}"
+  email = "{{ .user_info.email }}"
+  signingkey = "{{ .user_info.signingkey }}"
+[core]
+  editor = $EDITOR
+[color]
+  ui = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[commit]
+  gpgsign = false
+[safe]
+  directory = /opt/PixInsight

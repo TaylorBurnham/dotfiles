@@ -1,0 +1,1 @@
+chmod 0644 $HOME/.ssh/authorized_keys
