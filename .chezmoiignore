@@ -1,0 +1,3 @@
+**/**.zwc
+.oh-my-zsh/cache/*
+.local/bin/.dockcheck/regctl

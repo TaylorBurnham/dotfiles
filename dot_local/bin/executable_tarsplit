@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Assign input and output variables
+INPUT="$1"
+OUTPUT="$2"
+SIZE="512MiB"
+
+# Create tarball, pipe through pv for progress, gzip, and split
+tar cf - "$INPUT" | pv -s "$(du -sb "$INPUT" | \
+    awk '{print $1}')" | gzip - \
+    | split -d -a 5 -b "$SIZE" - "${OUTPUT}.tar.gz_"

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Set input file
+INPUT="$1"
+
+# Extract the gzipped tarball
+cat "${INPUT}"*.gz_* | gzip -d | tar xfv -

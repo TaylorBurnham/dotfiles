@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Default values
+DEFAULT_ID="System Management"
+DEFAULT_NAME="Dummy Password"
+DEFAULT_FORMAT="json"
+
+# Assigning command-line arguments with default values
+VAULT_ID="${1:-${DEFAULT_ID}}"
+VAULT_NAME="${2:-${DEFAULT_NAME}}"
+FORMAT="${3:-${DEFAULT_FORMAT}}"
+
+# Using 'jq' to extract the value field from JSON output
+op item get --format="${FORMAT}" \
+            --vault="${VAULT_ID}" \
+            --fields label=password "${VAULT_NAME}" | \
+            jq -r '.value'
+
