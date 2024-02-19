@@ -1,8 +1,10 @@
 export GITHUB_USERNAME="TaylorBurnham"
 
 # 1Password Hooks
-export SSH_AUTH_SOCK="~/.1password/agent.sock"
-source /home/taylor/.config/op/plugins.sh
+if command -v op &> /dev/null; then
+    export SSH_AUTH_SOCK="~/.1password/agent.sock"
+    source /home/taylor/.config/op/plugins.sh
+fi
 
 # Editor
 if [ "${VSCODE_INJECTION}" = "1" ]; then
