@@ -1,3 +1,5 @@
 **/**.zwc
 .oh-my-zsh/cache/*
 .local/bin/.dockcheck/regctl
+.vim/bundle/Vundle.vim/doc/*
+.oh-my-zsh/cache/completions

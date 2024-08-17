@@ -8,7 +8,7 @@ SAVEHIST=9000
 
 # oh-my-zsh Plugins
 plugins=(git git-lfs aws \
-  colorize cp debian fzf ripgrep \
+  colorize cp debian fzf \
   pip python pyenv virtualenv \
   zsh-syntax-highlighting zsh-completions \
   zsh-interactive-cd

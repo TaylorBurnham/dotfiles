@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Chezmoi Config",
+			"path": "/home/taylor/.config/chezmoi"
+		},
+		{
+			"name": "Chezmoi Home",
+			"path": "/home/taylor/.local/share/chezmoi"
+		}
+	],
+	"settings": {}
+}
