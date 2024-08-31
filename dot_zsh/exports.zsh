@@ -36,3 +36,12 @@ export BROWSER='firefox'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# xdg-ninja Cleanups
+export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws"
+export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
+
+export CUDA_CACHE_PATH="${XDG_CACHE_HOME}/nv"
+
+export BOGOFILTER_DIR="${XDG_DATA_HOME}/bogofilter"
+export DOTNET_CLI_HOME="${XDG_DATA_HOME}/dotnet"
