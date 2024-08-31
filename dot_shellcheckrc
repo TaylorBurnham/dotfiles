@@ -1,0 +1,2 @@
+shell=bash
+source-path="${HOME}/.zsh"

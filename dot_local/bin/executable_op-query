@@ -12,7 +12,6 @@ FORMAT="${3:-${DEFAULT_FORMAT}}"
 
 # Using 'jq' to extract the value field from JSON output
 op item get --format="${FORMAT}" \
-            --vault="${VAULT_ID}" \
-            --fields label=password "${VAULT_NAME}" | \
-            jq -r '.value'
-
+    --vault="${VAULT_ID}" \
+    --fields label=password "${VAULT_NAME}" |
+    jq -r '.value'

@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # Paths
 APPEND_PATHS=(
     "${HOME}/.local/bin"

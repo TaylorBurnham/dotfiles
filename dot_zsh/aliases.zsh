@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 alias chatgpt='OPENAI_API_KEY=$(op-query "Personal" "ChatGPT API Key - Xexanoth CLI") chatgpt'
 
 alias xc="xsel -bc && echo Cleared Clipboard"
@@ -9,7 +10,6 @@ alias ls='ls --color=auto'
 alias open='xdg-open'
 
 alias pbunzip2='pv -p -e -r -a -t "$1" | bunzip2'
-
 
 # Utilities
 alias dockcheck\.sh="${HOME}/.local/bin/.dockcheck/dockcheck.sh -n"
@@ -33,9 +33,8 @@ alias ansible-runner="${HOME}/.virtualenvs/ansible-env/bin/ansible-runner"
 alias ansible-test="${HOME}/.virtualenvs/ansible-env/bin/ansible-test"
 alias ansible-vault="${HOME}/.virtualenvs/ansible-env/bin/ansible-vault"
 
-
 # Sourced from Evan Han's dotfile repo
-boop () {
+boop() {
   local last="$?"
   if [[ "$last" == '0' ]]; then
     sfx good

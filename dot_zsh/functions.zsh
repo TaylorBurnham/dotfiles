@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # Functions
 function upgrade_pip_if_venv() {
   if [ -n "$VIRTUAL_ENV" ]; then
