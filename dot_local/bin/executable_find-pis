@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+PREFIXES=("b8:27:eb" "dc:a6:32" "e4:5f:01")
+arp -na | grep -E "$(IFS='|'; echo "${PREFIXES[*]}")"
