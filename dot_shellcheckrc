@@ -1,2 +1,3 @@
 shell=bash
+disable=SC2096
 source-path="${HOME}/.zsh"

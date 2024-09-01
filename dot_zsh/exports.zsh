@@ -1,15 +1,3 @@
-# shellcheck shell=bash
-export XDG_DATA_HOME="${HOME}/.local/share"
-export XDG_CONFIG_HOME="${HOME}/.config"
-export XDG_STATE_HOME="${HOME}/.local/state"
-export XDG_CACHE_HOME="${HOME}/.cache"
-
-export XDG_DESKTOP_DIR="${HOME}/Desktop"
-export XDG_DOCUMENTS_DIR="${HOME}/Documents"
-export XDG_DOWNLOAD_DIR="${HOME}/Downloads"
-export XDG_PICTURES_DIR="${HOME}/Media/Pictures"
-export XDG_VIDEOS_DIR="${HOME}/Media/Videos"
-
 export GITHUB_USERNAME="TaylorBurnham"
 
 # 1Password Hooks
@@ -33,15 +21,13 @@ fi
 
 export BROWSER='firefox'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
 # xdg-ninja Cleanups
 export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws"
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
-
+export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 export CUDA_CACHE_PATH="${XDG_CACHE_HOME}/nv"
+export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 
 export BOGOFILTER_DIR="${XDG_DATA_HOME}/bogofilter"
 export DOTNET_CLI_HOME="${XDG_DATA_HOME}/dotnet"
+export PLATFORMIO_CORE_DIR="${XDG_DATA_HOME}/platformio"
