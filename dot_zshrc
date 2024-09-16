@@ -1,4 +1,7 @@
+# shellcheck source=dot_zsh/options.zsh
 # Powerlevel10k
+
+# shellcheck disable=SC2296
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -16,11 +19,15 @@ export XDG_VIDEOS_DIR="${HOME}/Media/Videos"
 
 # oh-my-zsh Begin
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CACHE_DIR="$ZSH/cache"
+export ZSH_COMPDUMP="${ZSH_CACHE_DIR}/.zcompdump"
 export ZDOTDIR="${HOME}/.zsh"
 export ZSH_THEME="powerlevel10k/powerlevel10k"
 source "${ZDOTDIR}/oh-my-zsh-opts.zsh"
+
 # oh-my-zsh Init
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
+
 # zsh options
 source "${ZDOTDIR}/options.zsh"
 source "${ZDOTDIR}/paths.zsh"
@@ -30,4 +37,4 @@ source "${ZDOTDIR}/completion.zsh"
 source "${ZDOTDIR}/functions.zsh"
 
 # Powerlevel10k
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f "${HOME}/.p10k.zsh" ]] || source "${HOME}/.p10k.zsh"

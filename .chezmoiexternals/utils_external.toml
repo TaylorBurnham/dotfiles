@@ -5,7 +5,7 @@ url = "https://releases.hashicorp.com/terraform/1.7.3/terraform_1.7.3_linux_amd6
 path = "terraform"
 [".local/bin/gitleaks"]
 type = "archive-file"
-url = "https://github.com/gitleaks/gitleaks/releases/download/v8.18.2/gitleaks_8.18.2_linux_x64.tar.gz"
+url = "https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz"
 path = "gitleaks"
 [".local/bin/.dockcheck"]
 type = "archive"
@@ -18,3 +18,7 @@ type = "git-repo"
 url = "https://github.com/b3nj5m1n/xdg-ninja.git"
 refreshPeriod = "168h"
 include = ["*/*.sh"]
+[".local/bin/shellcheck"]
+type = "archive-file"
+url = "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz"
+path = "shellcheck-v0.10.0/shellcheck"
