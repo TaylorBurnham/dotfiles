@@ -14,6 +14,8 @@ APPEND_PATHS=(
 
     "${HOME}/.yarn/bin"
     "${HOME}/.config/yarn/global/node_modules/.bin"
+
+    "${HOME}/.cargo/bin"
 )
 for P in "${APPEND_PATHS[@]}"; do
     if [ -d "$P" ]; then
