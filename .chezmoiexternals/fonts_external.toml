@@ -5,9 +5,9 @@ url = "https://github.com/IdreesInc/Miracode/releases/download/v1.0/Miracode.ttf
 
 [".local/share/fonts/routed-gothic"]
 type = "archive"
-url = "https://webonastick.com/fonts/routed-gothic/download/routed-gothic-ttf.zip"
+url = "https://github.com/dse/routed-gothic/archive/refs/tags/v1.0.0.zip"
 stripComponents = 1
-include = ["**/**.ttf"]
+include = ["dist/ttf/*.ttf"]
 
 [".local/share/fonts/osifonts"]
 type = "archive"
