@@ -3,10 +3,12 @@
 type = "archive-file"
 url = "https://releases.hashicorp.com/terraform/1.7.3/terraform_1.7.3_linux_amd64.zip"
 path = "terraform"
+
 [".local/bin/gitleaks"]
 type = "archive-file"
 url = "https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz"
 path = "gitleaks"
+
 [".local/bin/.dockcheck"]
 type = "archive"
 url = "https://github.com/mag37/dockcheck/archive/refs/tags/v0.4.0.zip"
@@ -14,11 +16,19 @@ exact = true
 stripComponents = 1
 include = ["*/*.sh"]
 [".local/bin/.xdg-ninja"]
+
 type = "git-repo"
 url = "https://github.com/b3nj5m1n/xdg-ninja.git"
 refreshPeriod = "168h"
 include = ["*/*.sh"]
+
 [".local/bin/shellcheck"]
 type = "archive-file"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz"
 path = "shellcheck-v0.10.0/shellcheck"
+
+[".local/bin/lnav"]
+type = "archive-file"
+url = "https://github.com/tstack/lnav/releases/download/v0.12.2/lnav-0.12.2-linux-musl-x86_64.zip"
+path = "lnav-0.12.2/lnav"
+

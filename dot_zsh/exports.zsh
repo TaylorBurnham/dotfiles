@@ -22,7 +22,7 @@ fi
 export BROWSER='firefox'
 
 # xdg-ninja Cleanups
-export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws"
+export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config"
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
 export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 export CUDA_CACHE_PATH="${XDG_CACHE_HOME}/nv"

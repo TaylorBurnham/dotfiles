@@ -1,0 +1,16 @@
+# Fonts
+[".local/share/fonts/Miracode.ttf"]
+type = "file"
+url = "https://github.com/IdreesInc/Miracode/releases/download/v1.0/Miracode.ttf"
+
+[".local/share/fonts/routed-gothic"]
+type = "archive"
+url = "https://webonastick.com/fonts/routed-gothic/download/routed-gothic-ttf.zip"
+stripComponents = 1
+include = ["**/**.ttf"]
+
+[".local/share/fonts/osifonts"]
+type = "archive"
+url = "https://github.com/hikikomori82/osifont/archive/refs/tags/0.1.20230322.zip"
+stripComponents = 1
+include = ["**/**.ttf"]
