@@ -1,0 +1,9 @@
+# shellcheck shell=bash
+DISABLE_AUTO_UPDATE="true"
+CASE_SENSITIVE="true"
+ENABLE_CORRECTION="true"
+HIST_STAMPS="mm/dd/yyyy"
+HISTSIZE=100000
+SAVEHIST=9000
+
+HISTFILE="${XDG_STATE_HOME}/zsh/history"

@@ -1,0 +1,10 @@
+docker() {
+	if [ "$1" = "compose" ]; then
+		shift
+		command docker-compose "$@"
+	else
+		command docker "$@"
+	fi
+}
+
+eval $(thefuck --alias)

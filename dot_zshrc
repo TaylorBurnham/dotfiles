@@ -1,0 +1,37 @@
+source /opt/homebrew/share/antigen/antigen.zsh
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle docker
+antigen bundle 1password
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle MichaelAquilina/zsh-you-should-use
+antigen bundle zsh-users/zsh-completions
+antigen bundle unixorn/fzf-zsh-plugin
+antigen bundle djui/alias-tips
+
+antigen theme cloud
+
+# paths
+export XDG_DATA_HOME="${HOME}/.local/share"
+export XDG_CONFIG_HOME="${HOME}/.config"
+export XDG_STATE_HOME="${HOME}/.local/state"
+export XDG_CACHE_HOME="${HOME}/.cache"
+
+# zsh configuration files
+export ZSH_CACHE_DIR="$ZSH/cache"
+export ZSH_COMPDUMP="${ZSH_CACHE_DIR}/.zcompdump"
+export ZDOTDIR="${HOME}/.zsh"
+
+source "${ZDOTDIR}/oh-my-zsh-opts.zsh"
+source "${ZDOTDIR}/options.zsh"
+source "${ZDOTDIR}/paths.zsh"
+source "${ZDOTDIR}/exports.zsh"
+source "${ZDOTDIR}/aliases.zsh"
+source "${ZDOTDIR}/completion.zsh"
+source "${ZDOTDIR}/functions.zsh"
+
+antigen apply
