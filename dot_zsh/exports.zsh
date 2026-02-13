@@ -31,3 +31,5 @@ export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 export BOGOFILTER_DIR="${XDG_DATA_HOME}/bogofilter"
 export DOTNET_CLI_HOME="${XDG_DATA_HOME}/dotnet"
 export PLATFORMIO_CORE_DIR="${XDG_DATA_HOME}/platformio"
+
+export NPM_PACKAGES="$HOME/.npm-packages"

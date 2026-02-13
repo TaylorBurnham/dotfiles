@@ -1,5 +1,9 @@
 # shellcheck source=dot_zsh/options.zsh
 # Powerlevel10k
+if [[ -n "$SSH_CONNECTION" ]]; then
+  export TERM=xterm-256color
+  export POWERLEVEL9K_INSTANT_PROMPT=quiet
+fi
 
 # shellcheck disable=SC2296
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
